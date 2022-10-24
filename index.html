@@ -1,45 +1,287 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taehoon's Porfolio</title>
-    <meta name="description" content="Portfolio software beginner enginer Taehoon">
-    <meta name = "author" content="Taehoon">
-    <script src="main.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpg" href="imgs/cutecat.jpg">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <section class= "home">
-        <nav class = "navbar">
-            <div class="homeLogo">
-                <img src="imgs/kiwi-bird-solid.png" alt ="logo" class="logo">
-                <span class="title">Tae's</span>
-            </div>
-            <ul class="home_Opt">
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>About</li>
-                <li><a href=""></a>Skills</li>
-                <li><a href=""></a>My work</li>
-                <li><a href=""></a>Testimonial</li>
-                <li><a href=""></a>Contact</li>
-            </ul>
-                
-        </nav>
-        <div class="profile"><img src="imgs/Profile.jpg" alt="profile" class="profilePhoto"></div>
-        <div class="intro">
-            <div>Hello, I'm Taehoon</div>
-            <span>A computer Science majer student currently in Jackson Mississippi</span>
-    </div>
-        <button class="contactBtn">CONTACT ME</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaeWebsite</title>
+    <link rel="stylesheet" href="/index.css" />
+    <script src="/main.js" defer></script>
+    <script src="/background.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/61b7cd7fa3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul class="navbar__menu hidden">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+
+      <button class="navbar__toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <section class="main_contents" id="main_contents">
+        <div class="header">
+          <div class="web_logo">
+            <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span
+              class="tittle"
+              >OMoon</span
+            >
+          </div>
+        </div>
+        <div class="home__container">
+          <img
+            src="https://i.postimg.cc/ZRT10G0C/Kakao-Talk-20220906-003124208.jpg"
+            alt="Taehoon's profile photo"
+            class="home__avatar"
+          />
+          <h1 class="home__title">Hello, <br />My name is Taehoon</h1>
+          <h2 class="home__description">
+            I'm from South Korea, I'm majoring in Computer Science I'm currently
+            staying in Jackson,MS
+          </h2>
+          <button class="home__contact">CONTACT ME</button>
+        </div>
+      </section>
     </section>
 
-    
-</body>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="aboutFrame">
+        <div class="web_logo2">
+          <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span
+            class="tittle"
+            >OMoon</span
+          >
+        </div>
+        <h1 class="aboutMe">About me</h1>
+        <h2>
+          I am passionate about programming and troubleshooting, and resolving
+          software problems abilities. I am a capable and consistent
+          problem-solver skilled at prioritizing and managing projects with
+          proficiency.
+        </h2>
+        <div class="positions">
+          <div class="frontend">
+            <img src="https://i.postimg.cc/pXNW8M69/html.png" />
+            <h1>Front-end</h1>
+            <h2>HTML,CSS,JavaScript</h2>
+          </div>
+          <div class="backend">
+            <img src="https://i.postimg.cc/pddRxWpS/server.png" />
+            <h1>Back-end</h1>
+            <h2>JavaScript,Node.js</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills -->
+    <section class="skills" id="skills">
+      <div class="skillFrame">
+        <div class="web_logo3">
+          <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span
+            class="tittle"
+            >OMoon</span
+          >
+        </div>
+        <h1>Skills</h1>
+        <p>
+          Passion for learning new technologies. Capable of working within a
+          team environment and independently. Ability to plan and time schedule,
+          work under strict time pressure and adapt quickly when needed.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset_title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>30%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 30%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>NodeJS</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Tkinter</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Math</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- my Work -->
+    <section class="work" id="work">
+      <div class="myWorkFrame">
+        <div class="web_logo4">
+          <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span
+            class="tittle"
+            >OMoon</span
+          >
+        </div>
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__projects">
+          <a
+            href="https://github.com/taehoonyun/Homeshopping"
+            class="project"
+            target="blank"
+          >
+            <img
+              class="project__img"
+              src="https://i.postimg.cc/PJv8grYD/Kakao-Talk-20220821-102049765.jpg"
+              alt="login and create account"
+            />
+            <div class="project__description">
+              <h3>Shopping mall game</h3>
+              <span>HTML, CSS, JavaScript,Nodejs, Json</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/taehoonyun/Signinplatform"
+            class="project"
+            target="blank"
+          >
+            <img
+              class="project__img"
+              src="https://i.postimg.cc/cCvQdcyr/login-Page.png"
+              alt="Portfolio"
+            />
+            <div class="project__description">
+              <h3>create your account and login</h3>
+              <span>HTML, CSS, JavaScript ,Nodejs ,Json</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/taehoonyun/Homeshopping"
+            class="project"
+            target="blank"
+          >
+            <img
+              class="project__img"
+              src="https://i.postimg.cc/k5MskK4t/Kakao-Talk-20220906-054022186.png"
+              alt="Portfolio"
+            />
+            <div class="project__description">
+              <h3>Portfolio</h3>
+              <span>HTML, CSS, JavaScript ,Nodejs ,Json</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/taehoonyun/callback-phonebook"
+            class="project"
+            target="blank"
+          >
+            <img
+              class="project__img"
+              src="https://i.postimg.cc/05m2qFqJ/Kakao-Talk-20220907-002824289.png"
+              alt="Phonebook"
+            />
+            <div class="project__description">
+              <h3>call-phonebook</h3>
+              <span>Python, Tkinter</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/taehoonyun/Toom"
+            class="project"
+            target="blank"
+          >
+            <img
+              class="project__img"
+              src="https://i.postimg.cc/G3xsd8n4/2022-10-24-114548.jpg"
+              alt="Video Chatting Web Application"
+            />
+            <div class="project__description">
+              <h3>Video Chatting Web Application</h3>
+              <span>Nodejs, JavaScript, WebRTC, Websocket</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="contactFrame">
+        <div class="web_logo5">
+          <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span
+            class="tittle"
+            >OMoon</span
+          >
+        </div>
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">mnmn9069@gmail.com</h2>
+        <div class="contact__links">
+          <a href="https://github.com/taehoonyun" target="_blank">
+            <img src="https://i.postimg.cc/RVyT3DvS/github.png" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/taehoon-yun-567ba520b/"
+            target="_blank"
+          >
+            <img src="https://i.postimg.cc/h43Lw5zL/linkedin-logo.png" />
+          </a>
+        </div>
+        <p class="contact__rights">2022 OMoon - All rights reserved</p>
+      </div>
+    </section>
+  </body>
 </html>
