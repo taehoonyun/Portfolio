@@ -11,6 +11,10 @@
       src="https://kit.fontawesome.com/61b7cd7fa3.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Allerta Stencil"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav id="navbar">
@@ -18,7 +22,7 @@
         <li class="navbar__menu__item active" data-link="#home">Home</li>
         <li class="navbar__menu__item" data-link="#about">About</li>
         <li class="navbar__menu__item" data-link="#skills">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#work">My Work</li>
         <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
 
@@ -46,8 +50,11 @@
           />
           <h1 class="home__title">Hello, <br />My name is Taehoon</h1>
           <h2 class="home__description">
-            I'm from South Korea, I'm majoring in Computer Science I'm currently
-            staying in Jackson,MS
+            I'm from South Korea, I'm majoring in Computer Science. I'm
+            currently staying in Jackson,MS. <br />
+            I like traveling, cooking and watching movies.
+            <br />
+            I like playing ping-pong a lot, and I recently started to play golf.
           </h2>
           <button class="home__contact">CONTACT ME</button>
         </div>
@@ -57,29 +64,25 @@
     <!-- About -->
     <section class="about" id="about">
       <div class="aboutFrame">
-        <div class="web_logo2">
-          <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span
-            class="tittle"
-            >OMoon</span
-          >
-        </div>
         <h1 class="aboutMe">About me</h1>
         <h2>
           I am passionate about programming and troubleshooting, and resolving
           software problems abilities. I am a capable and consistent
           problem-solver skilled at prioritizing and managing projects with
-          proficiency.
+          proficiency. I am progressive-minded. I enjoy collective brainstorming
+          sessions which all me to coordinate activities to achieve a common
+          goal.
         </h2>
         <div class="positions">
           <div class="frontend">
-            <img src="https://i.postimg.cc/pXNW8M69/html.png" />
+            <img src="https://i.postimg.cc/vmgVkHX8/front-end.png" />
             <h1>Front-end</h1>
-            <h2>HTML,CSS,JavaScript</h2>
+            <h2>HTML, CSS, JavaScript, React</h2>
           </div>
           <div class="backend">
-            <img src="https://i.postimg.cc/pddRxWpS/server.png" />
+            <img src="https://i.postimg.cc/6QjML3q9/website.png" />
             <h1>Back-end</h1>
-            <h2>JavaScript,Node.js</h2>
+            <h2>JavaScript, Node.js, SQL</h2>
           </div>
         </div>
       </div>
@@ -87,12 +90,6 @@
     <!-- skills -->
     <section class="skills" id="skills">
       <div class="skillFrame">
-        <div class="web_logo3">
-          <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span
-            class="tittle"
-            >OMoon</span
-          >
-        </div>
         <h1>Skills</h1>
         <p>
           Passion for learning new technologies. Capable of working within a
@@ -108,7 +105,7 @@
                 <span>70%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 70%"></div>
+                <div class="skill__value HTML"></div>
               </div>
             </div>
             <div class="skill">
@@ -117,7 +114,7 @@
                 <span>60%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 60%"></div>
+                <div class="skill__value CSS"></div>
               </div>
             </div>
             <div class="skill">
@@ -126,16 +123,16 @@
                 <span>70%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 70%"></div>
+                <div class="skill__value JS"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>React</span>
-                <span>30%</span>
+                <span>50%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 30%"></div>
+                <div class="skill__value React"></div>
               </div>
             </div>
             <div class="skill">
@@ -144,7 +141,7 @@
                 <span>50%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 50%"></div>
+                <div class="skill__value Node"></div>
               </div>
             </div>
           </div>
@@ -154,6 +151,8 @@
               <ul class="tools__list">
                 <li><span>Visual Studio Code</span></li>
                 <li><span>Tkinter</span></li>
+                <li><span>Socket.io</span></li>
+                <li><span>RTCDataChannel</span></li>
               </ul>
             </div>
             <div class="etc">
@@ -161,6 +160,7 @@
               <ul class="etc__list">
                 <li><span>Git</span></li>
                 <li><span>Math</span></li>
+                <li><span>Docker</span></li>
               </ul>
             </div>
           </div>
@@ -170,13 +170,7 @@
     <!-- my Work -->
     <section class="work" id="work">
       <div class="myWorkFrame">
-        <div class="web_logo4">
-          <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span
-            class="tittle"
-            >OMoon</span
-          >
-        </div>
-        <h1>My work</h1>
+        <h1>My Work</h1>
         <h3>Projects</h3>
         <div class="work__projects">
           <a
@@ -186,7 +180,7 @@
           >
             <img
               class="project__img"
-              src="https://i.postimg.cc/PJv8grYD/Kakao-Talk-20220821-102049765.jpg"
+              src="https://i.postimg.cc/pL4cQvtj/Kakao-Talk-20221112-121725847-01.png"
               alt="login and create account"
             />
             <div class="project__description">
@@ -195,13 +189,13 @@
             </div>
           </a>
           <a
-            href="https://github.com/taehoonyun/Signinplatform"
+            href="https://github.com/taehoonyun/TaeWeb"
             class="project"
             target="blank"
           >
             <img
               class="project__img"
-              src="https://i.postimg.cc/cCvQdcyr/login-Page.png"
+              src="https://i.postimg.cc/yYw8wJmr/Kakao-Talk-20221112-121725847.png"
               alt="Portfolio"
             />
             <div class="project__description">
@@ -210,21 +204,6 @@
             </div>
           </a>
 
-          <a
-            href="https://github.com/taehoonyun/Homeshopping"
-            class="project"
-            target="blank"
-          >
-            <img
-              class="project__img"
-              src="https://i.postimg.cc/k5MskK4t/Kakao-Talk-20220906-054022186.png"
-              alt="Portfolio"
-            />
-            <div class="project__description">
-              <h3>Portfolio</h3>
-              <span>HTML, CSS, JavaScript ,Nodejs ,Json</span>
-            </div>
-          </a>
           <a
             href="https://github.com/taehoonyun/callback-phonebook"
             class="project"
@@ -238,6 +217,21 @@
             <div class="project__description">
               <h3>call-phonebook</h3>
               <span>Python, Tkinter</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/taehoonyun/Homeshopping"
+            class="project"
+            target="blank"
+          >
+            <img
+              class="project__img"
+              src="https://i.postimg.cc/2SDV1b1L/2022-11-12-122037.jpg"
+              alt="Portfolio"
+            />
+            <div class="project__description">
+              <h3>Portfolio</h3>
+              <span>HTML, CSS, JavaScript</span>
             </div>
           </a>
           <a
@@ -261,12 +255,6 @@
     <!-- Contact -->
     <section class="contact" id="contact">
       <div class="contactFrame">
-        <div class="web_logo5">
-          <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span
-            class="tittle"
-            >OMoon</span
-          >
-        </div>
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">mnmn9069@gmail.com</h2>
         <div class="contact__links">
