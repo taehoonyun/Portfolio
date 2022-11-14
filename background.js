@@ -10,7 +10,7 @@ function background() {
   bgImg.style.top = 0;
   bgImg.style.left = 0;
 }
-function bg() {
+function bg(x) {
   const about = document.querySelector(".about");
   const bgImg = document.createElement("img");
   bgImg.style.backgroundImage =
@@ -22,7 +22,15 @@ function bg() {
   bgImg.style.top = "99%";
   bgImg.style.left = 0;
   about.appendChild(bgImg);
+  if (x.matches) {
+    bgImg.style.height = "620vh";
+  } else {
+    bgImg.style.height = "420vh";
+  }
 }
 
 background();
-bg();
+
+var x = window.matchMedia("(max-width: 768px)");
+bg(x);
+x.addListener(bg(x));

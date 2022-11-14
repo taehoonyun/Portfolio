@@ -45,7 +45,7 @@ document.addEventListener("scroll", () => {
   const React = document.querySelector(".React");
   const Node = document.querySelector(".Node");
 
-  if (window.scrollY > 1400) {
+  if (window.scrollY > 1300) {
     HTML.style.width = "70%";
     CSS.style.width = "60%";
     JS.style.width = "70%";
