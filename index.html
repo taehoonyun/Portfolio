@@ -3,7 +3,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TaeWebsite</title>
+    <title>Omoon</title>
+    <link rel = "icon" href = 
+"https://i.postimg.cc/CL8nD01L/logo1.png" 
+        type = "image/x-icon">
     <link rel="stylesheet" href="/index.css" />
     <script src="/main.js" defer></script>
     <script src="/background.js" defer></script>
@@ -22,7 +25,7 @@
         <li class="navbar__menu__item active" data-link="#home">Home</li>
         <li class="navbar__menu__item" data-link="#about">About</li>
         <li class="navbar__menu__item" data-link="#skills">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">My_Work</li>
+        <li class="navbar__menu__item" data-link="#work">My Work</li>
         <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
 
@@ -52,11 +55,11 @@
           <h2 class="home__description">
             I'm from South Korea, I'm majoring in Computer Science. I'm
             currently staying in Jackson,MS. <br />
-            I like traveling, cooking and watching movies.
+            I like coding, traveling, cooking and watching movies.
             <br />
             I like playing ping-pong a lot, and I recently started to play golf.
           </h2>
-          <button class="home__contact">CONTACT ME</button>
+          <button class="home__contact" data-link="#contact">CONTACT ME</button>
         </div>
       </section>
     </section>
@@ -65,13 +68,19 @@
     <section class="about" id="about">
       <div class="aboutFrame">
         <h1 class="aboutMe">About me</h1>
-        <h2>
-          I am passionate about programming and troubleshooting, and resolving
-          software problems abilities. I am a capable and consistent
-          problem-solver skilled at prioritizing and managing projects with
-          proficiency. I am progressive-minded. I enjoy collective brainstorming
-          sessions which all me to coordinate activities to achieve a common
-          goal.
+        <br>
+        My interest in web development started back in 2021<br/>
+        I know it is not long ago, but I love coding since then.
+        What excites me most about learning for software development is
+        being able to design and create things that have a purpose and solve
+        real problems.
+         </br> </br>
+         I am good at trouble shooting, programming, and resolving software problems abilities. fixing trouble and building program is so much fun!
+         I am a capable and consistent problem-solver skilled at prioritizing and managing projects with
+         proficiency.  I enjoy collective brainstorming
+         sessions which all me to coordinate activities to achieve a common
+         goal.
+         
         </h2>
         <div class="positions">
           <div class="frontend">
@@ -81,7 +90,8 @@
               HTML<br />
               CSS<br />
               JavaScript<br />
-              React
+              React<br />
+              Web API
             </h2>
           </div>
           <div class="backend">
@@ -90,7 +100,8 @@
             <h2>
               JavaScript<br />
               Node.js<br />
-              SQL
+              SQL<br />
+              Rest API
             </h2>
           </div>
         </div>
@@ -101,9 +112,9 @@
       <div class="skillFrame">
         <h1>Skills</h1>
         <p>
-          Passion for learning new technologies. Capable of working within a
+          Learning new processes quickly. Passion for learning new technologies. Capable of working within a
           team environment and independently. Ability to plan and time schedule,
-          work under strict time pressure and adapt quickly when needed.
+          work under strict time pressure and adapt quickly when needed. a great communicator. 
         </p>
         <div class="skillset">
           <div class="skillset__left">
@@ -137,7 +148,7 @@
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>React</span>
+                <span>React.js</span>
                 <span>50%</span>
               </div>
               <div class="skill__bar">
@@ -146,7 +157,7 @@
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>NodeJS</span>
+                <span>Node.js</span>
                 <span>50%</span>
               </div>
               <div class="skill__bar">
@@ -168,8 +179,9 @@
               <h3 class="skillset__title">Etc</h3>
               <ul class="etc__list">
                 <li><span>- Git</span></li>
-                <li><span>- Math</span></li>
+                <li><span>- Wordpress</span></li>
                 <li><span>- Docker</span></li>
+                <li><span>- Bootstrap</span></li>
               </ul>
             </div>
           </div>
@@ -183,37 +195,22 @@
         <h3>Projects</h3>
         <div class="work__projects">
           <a
-            href="https://github.com/taehoonyun/Homeshopping"
+            href="https://github.com/taehoonyun/Toom"
             class="project"
             target="blank"
           >
             <img
               class="project__img"
-              src="https://i.postimg.cc/3wT7w7kJ/Kakao-Talk-20221112-121725847-01.png"
-              alt="login and create account"
+              src="https://i.postimg.cc/CMJzPTBt/Kakao-Talk-20221202-020840635.png"
+              alt="Video Chatting Web Application"
             />
             <div class="project__description">
-              <h3>Shopping mall game</h3>
-              <span>HTML, CSS, JavaScript, Json</span>
+              <h3>Video Chatting Web Application</h3>
+              <span>Nodejs, JavaScript, WebRTC, Websocket, HTML, CSS</span>
             </div>
           </a>
           <a
-            href="https://github.com/taehoonyun/TaeWeb"
-            class="project"
-            target="blank"
-          >
-            <img
-              class="project__img"
-              src="https://i.postimg.cc/rsy3kHqP/Kakao-Talk-20221112-121725847.png"
-              alt="Portfolio"
-            />
-            <div class="project__description">
-              <h3>create your account and login</h3>
-              <span>HTML, CSS, JavaScript ,Nodejs ,Json</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/taehoonyun/CopyStarbucksWebsite/tree/master"
+            href="https://github.com/taehoonyun/CopyStarbucksWebsite/tree/main"
             class="project"
             target="blank"
           >
@@ -227,6 +224,22 @@
               <span>HTML, CSS, JavaScript </span>
             </div>
           </a>
+          <a
+            href="https://github.com/taehoonyun/TWebsite"
+            class="project"
+            target="blank"
+          >
+            <img
+              class="project__img"
+              src="https://i.postimg.cc/VN3b1S7b/Kakao-Talk-20221205-155253233.png"
+              alt="login Service"
+            />
+            <div class="project__description">
+              <h3>create your account and login</h3>
+              <span>HTML, CSS, JavaScript ,Nodejs ,Json</span>
+            </div>
+          </a>
+          
 
           <a
             href="https://github.com/taehoonyun/callback-phonebook"
@@ -258,19 +271,20 @@
               <span>HTML, CSS, JavaScript</span>
             </div>
           </a>
+          
           <a
-            href="https://github.com/taehoonyun/Toom"
+            href="https://github.com/taehoonyun/Homeshopping"
             class="project"
             target="blank"
           >
             <img
               class="project__img"
-              src="https://i.postimg.cc/G3xsd8n4/2022-10-24-114548.jpg"
-              alt="Video Chatting Web Application"
+              src="https://i.postimg.cc/3wT7w7kJ/Kakao-Talk-20221112-121725847-01.png"
+              alt="login and create account"
             />
             <div class="project__description">
-              <h3>Video Chatting Web Application</h3>
-              <span>Nodejs, JavaScript, WebRTC, Websocket</span>
+              <h3>Shopping mall game</h3>
+              <span>HTML, CSS, JavaScript, Json</span>
             </div>
           </a>
           <a
@@ -285,7 +299,7 @@
             />
             <div class="project__description">
               <h3>Video Website Clone with api</h3>
-              <span>React.js, Css</span>
+              <span>React.js, Css, Web API</span>
             </div>
           </a>
           <a
@@ -300,7 +314,7 @@
             />
             <div class="project__description">
               <h3>Shopping Website simple clone with api</h3>
-              <span>React.js, Bootstrap</span>
+              <span>React.js, Bootstrap, Web API</span>
             </div>
           </a>
         </div>

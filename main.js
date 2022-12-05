@@ -11,6 +11,16 @@ navBarMenu.addEventListener("click", (event) => {
   const scrollTo = document.querySelector(link);
   scrollTo.scrollIntoView({ behavior: "smooth" });
 });
+const home_contact = document.querySelector(".home__contact");
+home_contact.addEventListener("click", (event) => {
+  const target = event.target;
+  const link = target.dataset.link;
+  if (link == null) {
+    return;
+  }
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+});
 
 const togglebtn = document.querySelector(".navbar__toggle_btn");
 const togle = document.querySelector(".navbar__menu");
