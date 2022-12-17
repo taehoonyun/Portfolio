@@ -9,7 +9,6 @@
         type = "image/x-icon">
     <link rel="stylesheet" href="/index.css" />
     <script src="/main.js" defer></script>
-    <script src="/background.js" defer></script>
     <script
       src="https://kit.fontawesome.com/61b7cd7fa3.js"
       crossorigin="anonymous"
@@ -21,6 +20,10 @@
   </head>
   <body>
     <nav id="navbar">
+      <div class="web_logo">
+        <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span>OMoon</span
+        >
+      </div>
       <ul class="navbar__menu hidden">
         <li class="navbar__menu__item active" data-link="#home">Home</li>
         <li class="navbar__menu__item" data-link="#about">About</li>
@@ -33,44 +36,38 @@
         <i class="fa-solid fa-bars"></i>
       </button>
     </nav>
-
-    <!-- Home -->
-    <section class="home" id="home">
-      <section class="main_contents" id="main_contents">
-        <div class="header">
-          <div class="web_logo">
-            <img src="https://i.postimg.cc/CL8nD01L/logo1.png" /><span
-              class="tittle"
-              >OMoon</span
-            >
+    <section class="homepage">
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="home__container">
+          <div class="introduceMe">
+            <h1 class="home__title">
+              <span class="title-word title-word-1">I'm</span>
+              <span class="title-word title-word-2">Taehoon</span>
+              <span class="title-word title-word-3">Yun</span>
+            </h1>
+            <h1 class="role">Front-end Developer</h1>
+            <h2 class="home__description">
+              I'm from South Korea, I'm majoring in Computer Science <br />at Belhaven University.
+              I'm currently staying in Jackson,MS. <br />
+              I love coding, traveling, cooking and watching movies.
+              <br />
+            </h2>
+            <button class="home__contact" data-link="#contact">CONTACT ME</button>
           </div>
         </div>
-        <div class="home__container">
-          <img
-            src="https://i.postimg.cc/rFJ6swSd/1.jpg"
-            alt="Taehoon's profile photo"
-            class="home__avatar"
-          />
-          <h1 class="home__title">Hello, <br />My name is Taehoon</h1>
-          <h2 class="home__description">
-            I'm from South Korea, I'm majoring in Computer Science. I'm
-            currently staying in Jackson,MS. <br />
-            I like coding, traveling, cooking and watching movies.
-            <br />
-            I like playing ping-pong a lot, and I recently started to play golf.
-          </h2>
-          <button class="home__contact" data-link="#contact">CONTACT ME</button>
-        </div>
+        <img class="scrollDown" src="https://i.postimg.cc/zfKtKRJk/down-arrow.png" width="3%" height="8%">
       </section>
-    </section>
 
     <!-- About -->
     <section class="about" id="about">
       <div class="aboutFrame">
         <h1 class="aboutMe">About me</h1>
+        <img src="https://i.postimg.cc/KYfvBZZR/1582399134865.jpg" width="100%">
         <br>
-        My interest in web development started back in 2021<br/>
-        I know it is not long ago, but I love coding since then.
+        <h2>
+        My interest in web development started back in 2017, and I really got into it in 2020. 
+        I know it hasn't been a long time since I started getting into it, but I became really passionate coding, and I love to build something.
         What excites me most about learning for software development is
         being able to design and create things that have a purpose and solve
         real problems.
@@ -339,5 +336,8 @@
         <p class="contact__rights">2022 OMoon - All rights reserved</p>
       </div>
     </section>
+    </section>
+    
   </body>
 </html>
+
