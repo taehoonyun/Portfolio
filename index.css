@@ -4,11 +4,12 @@
   
 }
 :root{
---font-small: "24px";
---font-medium: "36px";
---font-large:"48px";
+--font-size-small: "24px";
+--font-size-medium: "36px";
+--font-size-large:"48px";
 }
 body{
+  background: beige;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -71,14 +72,16 @@ h2{
   color: gray;
 }
 .homepage{
-  margin-top: 10%;
+  margin-top: 5%;
   width: 80%;
-  box-shadow: 0 0 5px 5px rgb(100, 100, 100);
-  background: beige;
+  box-shadow: 0 0 10px 5px rgb(100, 100, 100);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
 }
+
+/* Home Section */
 
 .home {
   background-color: white;
@@ -90,6 +93,7 @@ h2{
   justify-content: center;
   text-align: center;
   color: black;
+  margin: 8% 0;
  
 }
 .home__container{
@@ -99,7 +103,7 @@ h2{
 
 }
 .introduceMe{
-  padding: 48px 0;
+  padding: 24px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -107,9 +111,12 @@ h2{
   justify-content: center;
 }
 .scrollDown{
-  position: absolute;
-  bottom: 10px;
-  margin: 72px 0;
+  width: 3%;
+  height: 7%;
+  position: relative;
+  top:105%;
+  right: 50%;
+
 }
 .role{
   font-family: serif;
@@ -166,10 +173,10 @@ h2{
 .home__description {
   width: 100%;
   text-align: center;
-  font-size: var(--font-small);
+  font-size: var(--font-size-large);
   margin: 36px 12px;
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 3s;
 
 }
 
@@ -178,71 +185,26 @@ h2{
   margin-top: 12px;
   background-color: transparent;
   padding: 12px 12px;
-  color: white;
+  color: black;
   cursor: pointer;
-  border: solid 1px white;
+  border: solid 1px black;
 }
+/* About Section */
 
 .about {
-  width: 80%;
-  text-align: center;
-  background-image: linear-gradient(to bottom,#f5f3e9d4,white);
-}
-.positions {
-  background-image: linear-gradient(to bottom,#616f77,rgb(90, 88, 88));
-  display: flex;
-  justify-content: space-around;
   width: 100%;
-  margin: 36px 0px;
-  border-radius: 25px;
-  box-shadow: 10px 7px 10px black;
-}
-.positions h1 {
-  font-size: 24px;
-}
-.positions .frontend {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.positions .frontend h1{
   text-align: center;
-  width: 70%;
-  padding-bottom:12px;
-  border-bottom: solid 1px white;
+  background-color: #f5f3e9d4;
 }
 
-.positions .backend {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.positions .backend h1{
-  text-align: center;
-  width: 70%;
-  padding-bottom:12px;
-  border-bottom: solid 1px white;
-}
-
-.positions img {
-  margin: 12px 12px;
-  width: 25%;
-  height: 25%;
-}
 .aboutMe {
   font-size: 48px;
   flex-wrap: nowrap;
-  margin-top: 0;
+  margin:0;
   display: flex;
   justify-content: center;
 }
-.me{
-  width:"10%"; 
-  height:"80%";
-  z-index: -1;
-}
+
 .about {
   display: flex;
   justify-content: center;
@@ -251,16 +213,16 @@ h2{
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 24px;
+  font-size: var(--font-small);
 }
 
 .aboutFrame {
   display: block;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
   height: 100%;
-  padding: 100px 100px;
+  margin: 10% 0 ;
   font-size: var(--font-small);
   font-family: 'Courier New';
   color: black;
@@ -268,7 +230,74 @@ h2{
 .aboutFrame img{
   margin: 24px 12px;
 }
+/* Position */
+.BasicSkills{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 24px;
+}
 
+.positions{
+  background-color: beige;
+  width: 80%;
+  display: flex;
+  border-radius: 15px;
+}
+.position_description{
+  width: 100%;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.position_description h1{
+  margin: 12px;
+}
+.position_description h2{
+  font-size: 16px;
+  margin: 0;
+}
+.frontend{
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+.position_img{
+  flex-basis: 50%;
+}
+.desk{
+  position: relative;
+  bottom: -40%;
+  right: -10%;
+  width: 60%;
+  animation: appear 2s ease-in;
+}
+.desktop{
+  position: relative;
+  bottom: 5%;
+  right: 35%;
+  width: 30%;
+  animation: appear 2s;
+}
+.me{
+  position: relative;
+  bottom: 48%;
+  right: -21%;
+  width: 30%;
+  animation: appear 2s;
+}
+.chair{
+  position: relative;
+  bottom: 10%;
+  right: 15%;
+  width: 40%;
+  animation: appear 2s;
+}
 /* Skill Section */
 
 .skills {
@@ -276,7 +305,7 @@ h2{
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 80%;
+  width: 100%;
  
  
 }
@@ -389,13 +418,13 @@ h2{
 
 .work {
   background-color:  white;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .myWorkFrame {
-  width: 100%;
+  width: 80%;
   height: 50%;
   padding: 50px 0px;
   color: black;
@@ -439,23 +468,23 @@ h2{
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 350px;
+  width: 45%;
   height: 230px;
   margin: 12px 12px;
 }
 
 .project__img {
-  width: 350px;
-  height: 230px;
-  max-width: 350px;
-  max-height: 230px;
+  width: 100%;
+  height: 95%;
+  max-width: 100%;
+  max-height: 95%;
   background-color: white;
   border-radius: 15px;
 }
 
 .project__description {
   color: white;
-  width: 350px;
+  width: 100%px;
   height: 230px;
   background-color: black;
   position: absolute;

@@ -7,9 +7,12 @@ navBarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
-
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: "smooth" });
+  if (link == "#home") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    const scrollTo = document.querySelector(link);
+    scrollTo.scrollIntoView({ behavior: "smooth" });
+  }
 });
 const home_contact = document.querySelector(".home__contact");
 home_contact.addEventListener("click", (event) => {
