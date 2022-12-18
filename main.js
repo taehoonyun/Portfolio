@@ -40,23 +40,35 @@ document.addEventListener("scroll", () => {
 
 const logo = document.querySelector(".web_logo");
 
+// document.addEventListener("scroll", () => {
+//   if (window.scrollY > 1500) {
+//     navBarMenu.style.color = "lightgreen";
+//     navBarMenu.style.transition = "color 2s ease";
+//     togglebtn.style.color = "lightgreen";
+//     togglebtn.style.transition = "color 2s ease";
+//     logo.style.color = "lightgreen";
+//     logo.style.transition = "color 2s ease";
+//   } else {
+//     navBarMenu.style.color = "black";
+//     navBarMenu.style.transition = "color 2s ease";
+//     togglebtn.style.color = "black";
+//     togglebtn.style.transition = "color 2s ease";
+//     logo.style.color = "black";
+//     logo.style.transition = "color 2s ease";
+//   }
+// });
 document.addEventListener("scroll", () => {
-  if (window.scrollY > 1500) {
-    navBarMenu.style.color = "lightgreen";
-    navBarMenu.style.transition = "color 2s ease";
-    togglebtn.style.color = "lightgreen";
-    togglebtn.style.transition = "color 2s ease";
-    logo.style.color = "lightgreen";
-    logo.style.transition = "color 2s ease";
-  } else {
-    navBarMenu.style.color = "black";
-    navBarMenu.style.transition = "color 2s ease";
-    togglebtn.style.color = "black";
-    togglebtn.style.transition = "color 2s ease";
-    logo.style.color = "black";
-    logo.style.transition = "color 2s ease";
+  const desk = document.querySelector(".desk");
+  const me = document.querySelector(".me");
+  if (window.scrollY > 1300) {
+    desk.style.animation = "appear 2s ease-in";
+    setTimeout(() => {
+      me.style.visibility = "visible";
+      me.style.animation = "appear 2s ease-in";
+    }, 2000);
   }
 });
+
 document.addEventListener("scroll", () => {
   const HTML = document.querySelector(".HTML");
   const CSS = document.querySelector(".CSS");
@@ -64,9 +76,9 @@ document.addEventListener("scroll", () => {
   const React = document.querySelector(".React");
   const Node = document.querySelector(".Node");
 
-  if (window.scrollY > 1300) {
+  if (window.scrollY > 2400) {
     HTML.style.width = "70%";
-    CSS.style.width = "60%";
+    CSS.style.width = "70%";
     JS.style.width = "70%";
     React.style.width = "50%";
     Node.style.width = "50%";
