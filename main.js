@@ -26,9 +26,9 @@ home_contact.addEventListener("click", (event) => {
 });
 
 const togglebtn = document.querySelector(".navbar__toggle_btn");
-const togle = document.querySelector(".navbar__menu");
+const toggle = document.querySelector(".navbar__menu");
 togglebtn.addEventListener("click", () => {
-  togle.classList.toggle("hidden");
+  toggle.classList.toggle("hidden");
 });
 
 const home = document.querySelector(".home");
@@ -38,29 +38,11 @@ document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-const logo = document.querySelector(".web_logo");
-
-// document.addEventListener("scroll", () => {
-//   if (window.scrollY > 1500) {
-//     navBarMenu.style.color = "lightgreen";
-//     navBarMenu.style.transition = "color 2s ease";
-//     togglebtn.style.color = "lightgreen";
-//     togglebtn.style.transition = "color 2s ease";
-//     logo.style.color = "lightgreen";
-//     logo.style.transition = "color 2s ease";
-//   } else {
-//     navBarMenu.style.color = "black";
-//     navBarMenu.style.transition = "color 2s ease";
-//     togglebtn.style.color = "black";
-//     togglebtn.style.transition = "color 2s ease";
-//     logo.style.color = "black";
-//     logo.style.transition = "color 2s ease";
-//   }
-// });
 document.addEventListener("scroll", () => {
   const desk = document.querySelector(".desk");
   const me = document.querySelector(".me");
   if (window.scrollY > 1300) {
+    desk.style.visibility = "visible";
     desk.style.animation = "appear 2s ease-in";
     setTimeout(() => {
       me.style.visibility = "visible";
