@@ -53,21 +53,25 @@ document.addEventListener("scroll", () => {
 
 document.addEventListener("scroll", () => {
   const HTML = document.querySelector(".HTML");
-  const CSS = document.querySelector(".CSS");
+  const Python = document.querySelector(".Python");
+  const Java = document.querySelector(".Java");
   const JS = document.querySelector(".JS");
   const React = document.querySelector(".React");
   const Node = document.querySelector(".Node");
 
   if (window.scrollY > 2400) {
-    HTML.style.width = "70%";
-    CSS.style.width = "70%";
-    JS.style.width = "70%";
-    React.style.width = "50%";
-    Node.style.width = "50%";
+    HTML.style.width = "80%";
+    Python.style.width = "80%";
+    Java.style.width = "60%";
+    JS.style.width = "80%";
+    React.style.width = "60%";
+    Node.style.width = "60%";
     HTML.style.transitionTimingFunction = "easy-out";
     HTML.style.transitionDuration = "3s";
-    CSS.style.transitionTimingFunction = "easy-out";
-    CSS.style.transitionDuration = "3s";
+    Python.style.transitionTimingFunction = "easy-out";
+    Python.style.transitionDuration = "3s";
+    Java.style.transitionTimingFunction = "easy-out";
+    Java.style.transitionDuration = "3s";
     JS.style.transitionTimingFunction = "easy-out";
     JS.style.transitionDuration = "3s";
     React.style.transitionTimingFunction = "easy-out";
